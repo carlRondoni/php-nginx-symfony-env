@@ -4,7 +4,7 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": ">=8.1",
+        "php": ">=8.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "symfony/console": "6.3.*",
@@ -13,8 +13,6 @@
         "symfony/framework-bundle": "6.3.*",
         "symfony/runtime": "6.3.*",
         "symfony/yaml": "6.3.*"
-    },
-    "require-dev": {
     },
     "config": {
         "allow-plugins": {
@@ -41,7 +39,8 @@
         "symfony/polyfill-php73": "*",
         "symfony/polyfill-php74": "*",
         "symfony/polyfill-php80": "*",
-        "symfony/polyfill-php81": "*"
+        "symfony/polyfill-php81": "*",
+        "symfony/polyfill-php82": "*"
     },
     "scripts": {
         "auto-scripts": {
@@ -63,5 +62,8 @@
             "allow-contrib": false,
             "require": "6.3.*"
         }
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
     }
 }
