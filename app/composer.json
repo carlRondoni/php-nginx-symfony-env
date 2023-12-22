@@ -7,12 +7,12 @@
         "php": ">=8.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "symfony/console": "6.3.*",
-        "symfony/dotenv": "6.3.*",
-        "symfony/flex": "^2",
-        "symfony/framework-bundle": "6.3.*",
-        "symfony/runtime": "6.3.*",
-        "symfony/yaml": "6.3.*"
+        "symfony/console": "6.4.*",
+        "symfony/dotenv": "6.4.*",
+        "symfony/flex": "^2.4",
+        "symfony/framework-bundle": "6.4.*",
+        "symfony/runtime": "6.4.*",
+        "symfony/yaml": "6.4.*"
     },
     "config": {
         "allow-plugins": {
@@ -60,7 +60,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "6.3.*"
+            "require": "6.4.*"
         }
     },
     "require-dev": {
