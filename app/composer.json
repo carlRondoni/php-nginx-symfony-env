@@ -20,7 +20,8 @@
             "symfony/flex": true,
             "symfony/runtime": true
         },
-        "sort-packages": true
+        "sort-packages": true,
+        "bin-dir": "./bin"
     },
     "autoload": {
         "psr-4": {
@@ -52,7 +53,9 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
+        ],
+        "lint:check": "bin/phpcs ./src",
+        "lint:fix": "bin/phpcbf ./src"
     },
     "conflict": {
         "symfony/symfony": "*"
@@ -64,6 +67,7 @@
         }
     },
     "require-dev": {
-        "roave/security-advisories": "dev-latest"
+        "roave/security-advisories": "dev-latest",
+        "squizlabs/php_codesniffer": "^3.8"
     }
 }

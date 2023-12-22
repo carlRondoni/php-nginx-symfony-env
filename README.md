@@ -19,3 +19,13 @@ Run the container:
 Access php container:
 
 `docker exec -ti php8-container bash`
+
+### Inside Container
+
+Php code_sniffer (to find problems on your code)
+
+`composer lint:check`
+
+Php Beautifier (to fix a few fixable problems from previous command)
+
+`composer lint:fix`
