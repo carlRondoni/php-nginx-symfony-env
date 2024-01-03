@@ -1,6 +1,8 @@
 # PHP Symfony Env
 
-Basic Symfony (6.4) Dev Enviroment, just installing Docker on your computer and basic set up for code quality and test suite.
+Basic Symfony (6.4) Dev Enviroment, just installing Docker on your computer with basic set up for code quality and test suite.
+
+With this env you have something to start work with on a symfony env.
 
 ## Req
 
@@ -19,6 +21,10 @@ Run the container:
 Access php container:
 
 `docker exec -ti php8-container bash`
+
+Run a command into the container:
+
+`docker exec php8-container <command>`
 
 ### Inside Container
 
