@@ -1,27 +1,35 @@
 # PHP Symfony Env
 
-Basic Symfony (6.3) Dev Enviroment, just installing Docker on your computer.
+Basic Symfony (6.4) Dev Enviroment, just installing Docker on your computer with basic set up for code quality and test suite.
+
+With this env you have something to start work with on a symfony env.
 
 ## Req
 
 - Docker
+- PHP + Composer (and iconv extension enabled)
+- `.env` from `.env.example`
 
-### Optional Req
+## Start
 
-- Vs Code + exts : Docker and Dev Containers [Check NOTE]
+Clone this repo and run `composer install`. After that you can start play with docker.
 
-NOTE: on VSCode you can access to a container and dev some stuff inside it and it will reflect the changes into the code. Check for setting it up -> https://code.visualstudio.com/docs/devcontainers/containers . After this on open VSC -> Docker (sidebar menu) -> right click on php container and click on 'Attach Visual Studio Code'
+## Docker Commands
 
-## Commands
+Build the app -> `docker compose build`
 
-Build the app:
+Run the container -> `docker compose up -d`
 
-`docker compose build`
+Access php container -> `docker exec -ti php8-container bash`
 
-Run the container:
+Run a command into the container -> `docker exec php8-container <command>`
 
-`docker compose up -d`
+Local Url -> `http://localhost:8080`
 
-Access php container if you dont use VSC container dev tool:
+## Composer scripts
 
-`docker exec -ti php8-container bash`
+Remember to start with `composer`:
+
+`lint:check` -> check and display lint errors
+
+`lint:fix` -> check and fix some errors
