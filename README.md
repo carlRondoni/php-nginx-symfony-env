@@ -7,6 +7,8 @@ With this env you have something to start work with on a symfony env.
 ## Req
 
 - Docker
+- PHP + Composer (and iconv extension enabled)
+- `.env` from `.env.example`
 
 ## Commands
 
