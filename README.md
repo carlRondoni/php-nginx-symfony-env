@@ -10,30 +10,26 @@ With this env you have something to start work with on a symfony env.
 - PHP + Composer (and iconv extension enabled)
 - `.env` from `.env.example`
 
-## Commands
+## Start
 
-Build the app:
+Clone this repo and run `composer install`. After that you can start play with docker.
 
-`docker compose build`
+## Docker Commands
 
-Run the container:
+Build the app -> `docker compose build`
 
-`docker compose up -d`
+Run the container -> `docker compose up -d`
 
-Access php container:
+Access php container -> `docker exec -ti php8-container bash`
 
-`docker exec -ti php8-container bash`
+Run a command into the container -> `docker exec php8-container <command>`
 
-Run a command into the container:
+Local Url -> `http://localhost:8080`
 
-`docker exec php8-container <command>`
+## Composer scripts
 
-### Inside Container
+Remember to start with `composer`:
 
-Php code_sniffer (to find problems on your code)
+`lint:check` -> check and display lint errors
 
-`composer lint:check`
-
-Php Beautifier (to fix a few fixable problems from previous command)
-
-`composer lint:fix`
+`lint:fix` -> check and fix some errors

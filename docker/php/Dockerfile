@@ -1,4 +1,4 @@
-FROM php:8-fpm
+FROM php:8.3-fpm
 
 # base php config
 RUN apt-get update && apt-get install -y zlib1g-dev g++ git libicu-dev zip libzip-dev zip \
